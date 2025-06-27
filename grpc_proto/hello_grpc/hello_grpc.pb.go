@@ -58,7 +58,6 @@ func (c *helloServiceClient) SayHello(ctx context.Context, in *HelloRequest, opt
 type HelloServiceServer interface {
 	// 定义函数
 	SayHello(context.Context, *HelloRequest) (*HelloResponse, error)
-	mustEmbedUnimplementedHelloServiceServer()
 }
 
 // UnimplementedHelloServiceServer must be embedded to have
